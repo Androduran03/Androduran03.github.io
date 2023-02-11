@@ -1,0 +1,21 @@
+.lihat-destinasi{
+    background-color: white;
+    
+padding-right: 10px;
+border-radius: 20px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.lihat-destinasi p{
+font-weight: 200;
+font-size: 16px;
+}
+.lihat-destinasi h5{
+font-weight: 300;
+font-family: 'Dosis', sans-serif;
+font-family: 'Sora', sans-serif;
+text-align: center;
+}
+.navbar{
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}

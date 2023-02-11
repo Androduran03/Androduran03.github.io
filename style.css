@@ -1,0 +1,349 @@
+
+
+section h2{
+padding-top: 50px;
+padding-bottom: 40px;
+}
+.navbar{
+    position: relative;
+    z-index: 2;
+}
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+.navbar-brand{
+    font-family:'Sora', sans-serif;
+    font-size: 32px;
+}
+/* jumbotron */
+.jumbotron{
+    background-image: url('img/waerebo.jpg');
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+
+    
+    
+}
+
+.jumbotron:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top,rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4 {
+    color: white;
+    padding-top: 260px;
+    text-align: center;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    font-size: 31;
+    margin-bottom: 50px;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+}
+.jumbotron p{
+    text-transform: uppercase;
+    
+font-family: 'Lobster', cursive;
+
+}
+/* akir jumbotron */
+/* infopanel */
+
+.info-panel{
+    background-color:white;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    margin-top: -50px;
+    z-index: 2;
+    border-radius: 40px;
+    padding: 30px;
+}
+.info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+   
+}
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.info-panel p{
+    font-size: 14px;
+color: #acacac;
+margin-top: -5px;
+}
+/* utilitis */
+
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.parawisata{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.parawisata .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21,20,51,0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.parawisata img{
+    transition: all 0.4s ease;
+   
+}
+.parawisata h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.parawisata h6{
+    font-weight: 200;
+    font-size: 14px; 
+}
+.parawisata:hover .overlay{
+    opacity: 1;
+}
+.parawisata:hover img{
+    transform: scale(1.1);
+}
+#gallery img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.grid-wrapper > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.grid-wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+.grid-wrapper .wide{
+    grid-column: span 2;
+
+}
+.grid-wrapper .tall{
+    grid-row: span 2;
+    
+}
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+    
+}
+.theree-col-grid {
+  
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    align-items: center;
+}
+.hover-effect{
+    transition: all 0.4s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.hover-effect:hover{
+transform: translateY(-5px);
+box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+border-bottom-color:#b3040d ;
+}
+.intro-text{
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+/* icon box */
+
+.icon-box{
+    font-size: 46px;
+    color: #b3040d;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    overflow: hidden;
+}
+.icon-box::after{
+    content: '';
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    z-index: -1;
+    background:linear-gradient(rgba(179,4,13,0.7),rgba(179,4,13, 0.184));
+    width: 50px;
+    height: 50px;
+}
+/* contact */
+#contact h6{
+    margin-top: 24px;
+}
+#contact span{
+    font-weight: 200;
+    color: #acacac;
+}
+.contact-info{
+    text-align: center;
+    padding: 24px;
+}
+/* akir contact */
+
+@media (min-width: 576px) { 
+    .theree-col-grid{
+        display: block;
+    }
+    
+ }
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .theree-col-grid{
+        display: grid;
+    }
+    
+.nav-link:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+
+}
+.jumbotron{
+    margin-top: -75px;
+    height: 640px;
+}
+.jumbotron .display-4 {
+    font-weight: 60;
+}
+ }
+
+/* akir jumbtron */
+
+
+#about{
+    margin-top: 50px;
+}
+#about col{
+    margin-right: 20px;
+}
+#about h2,col{
+    padding-bottom: 20px;
+}
+#about p{text-align: justify;}
+.about{
+    
+    font-weight: 200;
+    font-size: 20px;
+}
+#parawisata{
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.galeri{
+    width: 400px;
+}
+section h2{
+    padding-bottom: 20px;
+   margin: 20px;
+   position: relative;
+
+}
+section h2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #ddd;
+    left:calc(50% - 60px);
+
+}
+section h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #0b63dc;
+    left:calc(50% - 20px);
+
+}
+.card{
+    margin-top: 5pxs;
+}
+
+#gallery {
+padding: 10px;
+box-sizing: border-box;
+}
+.gallery-img{
+    width: 100%;
+
+}
+#gallery .row > *{
+    padding: 0;
+}
+
+.footer{
+    padding: 25px;
+    margin-top: -10px;
+}
+
+#parawisata img{
+
+    width: 100%;
+    height: 100%;
+}
+#parawisata .col-md-3 {
+    padding: 20px;
+}
+#parawisata.col-md-3 :hover img{
+    opacity: 10px;
+}
